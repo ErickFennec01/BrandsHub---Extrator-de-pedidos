@@ -1,74 +1,85 @@
-Extrator de Pedidos – API BrandsHUB API
+# Extrator de Pedidos – BrandsHUB
 
-Projeto que consome a API da BrandsHUB para gerar uma planilha com todos os itens dos pedidos de compra.
+Projeto criado para consumir a API do BrandsHUB e gerar uma planilha contendo todos os itens dos pedidos de compra.
 
-🔧 Funcionalidades
+---
 
-Conecta-se à API BrandsHUB para obter dados de pedidos de compra.
+## 🔧 Funcionalidades
 
-Extrai os itens de cada pedido (produto, SKU, quantidade, fornecedor etc.).
+- Consome a API do BrandsHUB.
+- Extrai todos os itens dos pedidos de compra.
+- Gera planilhas em Excel/CSV com os dados coletados.
+- Ideal para automação de compras e controle de estoque.
 
-Gera uma planilha (por exemplo, em formato Excel ou CSV) com todos os itens de compras.
+---
 
-Permite automatização e uso em integração com sistemas de pedidos ou estoque.
+## 🛠️ Tecnologias Utilizadas
 
-🛠️ Tecnologias e ferramentas utilizadas
+- **Python**
+- **Requests**
+- **Pandas**
+- **OpenPyXL**
+- **Git / GitHub**
 
-Linguagem: Python
+---
 
-Bibliotecas principais: (ex: requests, pandas, openpyxl)
+## 🚀 Como Usar
 
-Controle de versão: Git / Git Hub
-
-Ambiente de execução: Local / servidor conforme necessidade
-
-🚀 Como usar
-
-Clone o repositório:
-
+### 1. Clonar o repositório
+```bash
 git clone https://github.com/ErickFennec01/Consumindo-api.git
 cd Consumindo-api
-
-
-Instale as dependências (exemplo usando pip):
-
+2. Instalar dependências
+bash
+Copiar código
 pip install -r requirements.txt
+3. Configurar credenciais
+Crie um arquivo .env ou ajuste diretamente no código:
 
-
-Configure as credenciais da API (por exemplo, criando um arquivo .env ou passando variáveis de ambiente):
-
-BRANDSHUB_API_KEY=seu_token
-BRANDSHUB_API_URL=https://api.brandshub.com.br/…
-
-
-Execute o script principal:
-
+ini
+Copiar código
+BRANDSHUB_API_KEY=SEU_TOKEN
+BRANDSHUB_API_URL=https://api.brandshub.com.br/...
+4. Executar o extrator
+bash
+Copiar código
 python extrator_pedidos.py
+A planilha final será salva dentro da pasta output/.
 
-
-Ao finalizar, será gerada uma planilha com os itens dos pedidos no diretório de saída definido.
-
-📁 Estrutura do projeto
-/Consumindo-api
+📂 Estrutura do Projeto
+bash
+Copiar código
+Consumindo-api/
 │
-├─ extrator_pedidos.py         # Script principal que consome a API e gera a planilha  
-├─ requirements.txt            # Dependências do projeto  
-├─ config/                     # Configurações da API, variáveis de ambiente etc.  
-└─ output/                     # Pasta onde a planilha gerada será salva  
+├─ extrator_pedidos.py       # Script principal
+├─ requirements.txt          # Dependências
+├─ config/                   # Configurações e arquivos auxiliares
+└─ output/                   # Planilhas geradas
+✅ Melhorias Futuras
+Adicionar logs detalhados.
 
-✅ Possíveis melhorias
+Tratar erros de conexão/timeout com a API.
 
-Adição de logs mais detalhados para acompanhamento da execução.
+Enviar planilha automaticamente por e-mail.
 
-Tratamento robusto de erros de rede ou de resposta da API.
+Dashboard web ou interface gráfica.
 
-Suporte a formatos adicionais de saída (ex: Google Sheets, base de dados).
+📌 Observação
+Este projeto foi desenvolvido com foco em automação interna de pedidos, garantindo rapidez e precisão na geração das planilhas.
 
-Integração com sistema de envio automático da planilha por e-mail.
+📜 Licença
+Projeto disponibilizado sob licença MIT.
 
-Interface gráfica simples ou painel web para execução facilitada.
+yaml
+Copiar código
 
-📝 Licença
+---
 
-Este projeto está licenciado sob a MIT License
-. Sinta-se à vontade para adaptar conforme suas necessidades.
+Se quiser, posso:
+
+• criar um **badge de status**,  
+• adicionar **GIF de demonstração**,  
+• personalizar com **ícones e logos**,  
+• ou criar um **banner visual** para o topo do README.
+
+Só pedir.
