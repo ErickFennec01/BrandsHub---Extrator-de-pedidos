@@ -17,9 +17,9 @@ load_dotenv()  # Carrega as variáveis de ambiente do arquivo .env
 API_URL = "https://seller.api.brandshub.com.br/"
 
 # Credenciais de login (somente para testes)
-EMAIL = "erick.silva@spiritosanto.com.br"
-PASSWORD = "84256643"
-ACCOUNT_ID = "kqSpBxUNyJQt"
+EMAIL = "Coloque seu email"
+PASSWORD = "Coloque sua senha"
+ACCOUNT_ID = "ID DA SUA CONTA"
 USER_AGENT = "MeuSeller/1.0 (https://meuintegrador.com.br)"
 
 def get_auth_token():
